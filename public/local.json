@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1, 
+        "destino": "Cataratas",
+        "category": "avion", 
+        "precio": 30000, 
+        "disponibilidad": 10, 
+        "fechaSalida": "10 de enero",
+        "fechaLlegada": "15 de enero",  
+        "duracion": "5 dias - 4 noches" , 
+        "descripcion": "Se trata de más de 2 km de cascadas que superan los 70 metros de altura, una manifestación espectacular de uno de los recursos cada vez más escasos del planeta: el agua. Los saltos transcurren a lo largo de acantilados e islotes, repartidos en una media luna que forma este accidente geográfico.",
+        "img": "/img/Cataratas_del_Iguazú_,Argentina.jpg",
+        "stock": 5
+    },
+    {
+        "id": 2, 
+        "destino": "Federacion",
+        "category": "colectivo", 
+        "precio": 50000, 
+        "disponibilidad": 15, 
+        "fechaSalida": "15 de febrero",
+        "fechaLlegada": "25 de febrero",  
+        "duracion": "6 dias - 5 noches" ,
+        "descripcion": "Inauguradas en 1995, las termas de Federación son la primera perforación termal de la mesopotamia argentina. Sus aguas surgen desde una profundidad de 1.260 metros y pertenecen al Acuífero Tacuarembó o Acuífero Guaraní, del que también se nutren las termas del vecino país Uruguay y las del sur de Brasil.",
+        "img": "/img/Cataratas_del_Iguazú_,Argentina.jpg",
+        "stock": 5
+    },
+    {
+        "id": 3, 
+        "destino": "Camboriu",
+        "category": "avion", 
+        "precio": 35000, 
+        "disponibilidad": 20, 
+        "fechaSalida": "10 de marzo",
+        "fechaLlegada": "15 de marzo",  
+        "duracion": "8 dias - 7 noches" ,
+        "descripcion": "Balneario Camboriu, ubicada en la costa centro-norte de Santa Catarina, es uno de los destinos turísticos más visitados de Brasil, particularmente en Santa Catarina, Rio Grande do Sul y Paraná. En la temporada, y en los meses de marzo y abril también es significativa la presencia de paraguayos, chilenos y argentinos.",
+        "img": "/img/Cataratas_del_Iguazú_,Argentina.jpg",
+        "stock": 5
+    },
+    {
+        "id": 4, 
+        "destino": "Glaciar",
+        "category": "colectivo", 
+        "precio": 65000, 
+        "disponibilidad": 25, 
+        "fechaSalida": "10 de enero",
+        "fechaLlegada": "15 de enero",  
+        "duracion": "11 dias - 10 noches" , 
+        "descripcion": "El Glaciar Perito Moreno es uno de los glaciares más espectaculares de la Argentina. Con sus 5 km de ancho, y ubicado a 60 msnm, sorprende tanto a locales como a visitantes. Se localiza en el Parque Nacional Los Glaciares, junto a más de 300 glaciares, que forman lo que se denomina el Campo de Hielo Patagónico.",
+        "img": "/img/Cataratas_del_Iguazú_,Argentina.jpg",
+        "stock": 5
+    }
+]

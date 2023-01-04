@@ -1,0 +1,43 @@
+import { useEffect, useState } from "react"
+import { doc, getDoc, collection, getDocs } from "firebase/firestore"
+import { db } from "../../config"
+
+const ItemsList = () => {
+
+  const [item, setItem] = useState()
+  const [items, setItems] = useState([])
+
+  useEffect(() => {
+    getItemData()
+    getItems()
+  }, [])
+
+  const getItemData = () => {
+    const docRef = doc(db, 'viajes', 'E9rIwHXVXJIQaMCbIIWK')
+    getDoc( docRef ).then( snapshot => {
+        setItem( { id: snapshot.id, ...snapshot.data()} )
+        console.log(snapshot.data());
+    })
+  }
+
+  const getItems = async () => {
+    const collectionRef = collection(db, 'viajes')
+    const snapshot = await getDocs( collectionRef )
+    setItems( snapshot.docs.map( d => ( { id:d.id, ...d.data() } ) ));
+  }  
+
+  return (
+    <div className="text-xl m-10">
+        <h1>Listado de productos</h1>
+        { item && 
+            <>
+                <h2>Producto destacado:</h2>
+                <p>{item.title} - stock: {item.stock}</p>
+            </>
+        }
+
+        { items.map( i => <li key={i.id}>{i.title} - {i.price} - stock: {i.stock}</li> ) }
+    </div>
+  )
+}
+export default ItemsList
