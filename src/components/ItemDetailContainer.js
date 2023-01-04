@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Loader from './Loader'
 import ItemDetail from './ItemDetail'
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '../config'
 
 const ItemDetailContainer = () => {
 
@@ -11,12 +13,25 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState()
 
   const getProduct = (id) => {
+    const docRef = doc(db, 'viajes', productID)
+    getDoc( docRef ).then( snapshot => {
+        setProduct( { id: snapshot.id, ...snapshot.data()} )
+        console.log(snapshot.data());
+    }).finally(() => setLoading(false))
+  }
+
+  useEffect(() => {
+    setLoading(true)
+    getProduct()
+  }, [productID])
+
+/*   const getProduct = (id) => {
     setTimeout(() => {
       fetch('../local.json')
         .then(res => res.json())
         .then(data => {
           setLoading(false)
-          const findedProducts = data.find(product => product.id === Number(id)) /*  product.id === id */
+          const findedProducts = data.find(product => product.id === Number(id))
           setProduct(findedProducts)
         })
     }, 500);
@@ -25,7 +40,8 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     setLoading(true)
     getProduct(productID)
-  }, [productID])
+  }, [productID]) */
+
 
   return (
     <div className='flex justify-center'>
