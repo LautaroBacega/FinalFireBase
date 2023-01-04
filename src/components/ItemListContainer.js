@@ -14,7 +14,7 @@ const ItemListContainer = () => {
 
   const getProducts = () => {
     const collectionRef = collection(db, 'viajes')
-    getDoc( collectionRef )
+    getDocs( collectionRef )
       .then( snapshot => setProducts( snapshot.docs.map(d => ({...d.data(), id: d.id}))))
       .finally(() => setLoading(false))
   }

@@ -21,15 +21,15 @@ const ItemDetail = ({product, count}) => {
           <div className="grid grid-rows-1 p-5 m-5 place-items-center">
                   <div className="carousel w-full object-cover h-48 w-96">
                       <div id="slide1" className="carousel-item relative w-full object-cover h-48 w-96">
-                          <img src={`${product.img}`} className="w-full" />
+                          <img src={`${product.carousel1}`} className="w-full" />
                           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                               <a href="#slide4" className="btn btn-circle bg-black text-white">❮</a> 
                               <a href="#slide2" className="btn btn-circle bg-black text-white">❯</a>
                           </div>
                       </div>
 
-                      <div id="slide2" className="carousel-item relative w-full oobject-cover h-48 w-96">
-                          <img src={`${product.img}`}  className="w-full" />
+                      <div id="slide2" className="carousel-item relative w-full object-cover h-48 w-96">
+                          <img src={`${product.carousel2}`}  className="w-full" />
                           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                               <a href="#slide1" className="btn btn-circle bg-black text-white">❮</a> 
                               <a href="#slide3" className="btn btn-circle bg-black text-white">❯</a>
@@ -37,7 +37,7 @@ const ItemDetail = ({product, count}) => {
                       </div>
 
                       <div id="slide3" className="carousel-item relative w-full object-cover h-48 w-96">
-                          <img src={`${product.img}`} className="w-full" />
+                          <img src={`${product.carousel3}`} className="w-full" />
                           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                               <a href="#slide2" className="btn btn-circle bg-black text-white">❮</a> 
                               <a href="#slide4" className="btn btn-circle bg-black text-white">❯</a>
@@ -45,7 +45,7 @@ const ItemDetail = ({product, count}) => {
                       </div>
 
                       <div id="slide4" className="carousel-item relative w-full object-cover h-48 w-96">
-                          <img src={`${product.img}`} className="w-full" />
+                          <img src={`${product.carousel4}`} className="w-full" />
                           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                               <a href="#slide3" className="btn btn-circle bg-black text-white">❮</a> 
                               <a href="#slide1" className="btn btn-circle bg-black text-white">❯</a>
@@ -56,7 +56,7 @@ const ItemDetail = ({product, count}) => {
           </div>
 
           <div className='grid grid-rows-1 p-5 m-5  place-items-center'>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qjm-qmIWgn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="560" height="315" src={`${product.link}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
 
         </div>          

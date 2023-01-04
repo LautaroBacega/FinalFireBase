@@ -17,10 +17,10 @@ const Navbar = ({id}) => {
                     <ul tabIndex={0} className="menu dropdown-content p-2 shadow bg-white text-black rounded-box w-52 mt-4">
                         
                         {/* {PRODUCTS.map(lugar => <li><a><Link to={`/item/${lugar.id}`}>{lugar.destino}</Link></a></li> )} */}
-                        <li><a><Link to={`/item/1`}>Cataratas</Link></a></li> 
-                        <li><a><Link to={`/item/2`}>Federacion</Link></a></li> 
-                        <li><a><Link to={`/item/3`}>Camboriu</Link></a></li> 
-                        <li><a><Link to={`/item/4`}>Glaciar</Link></a></li> 
+                        <li><a><Link to={`/item/1`}>Cataratas del Iguazu</Link></a></li> 
+                        <li><a><Link to={`/item/2`}>Termas Federacion</Link></a></li> 
+                        <li><a><Link to={`/item/3`}>Camboriu, Brasil</Link></a></li> 
+                        <li><a><Link to={`/item/4`}>Glaciar Perito Moreno</Link></a></li> 
                     </ul>
                 </div>
 

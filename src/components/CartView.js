@@ -16,7 +16,7 @@ const CartView = () => {
             <h1 className='uppercase font-semibold text-lg m-1 p-1 text-white '>Carrito</h1>
             <div className='w-[60%] flex relative h-[50px] bg-dimWhite m-1 font-medium bg-white text-black'>
               <div className='flex items-center justify-center w-[15%]'/>
-              <div className='flex items-center justify-center w-[45%]'>Product</div>
+              <div className='flex items-center justify-center w-[45%]'>Producto</div>
               <div className='flex items-center justify-center w-[15%]'>Precio</div>
               <div className='flex items-center justify-center w-[12%]'>Cantidad</div>
               <div className='flex items-center justify-center w-[15%]'>TOTAL</div>
